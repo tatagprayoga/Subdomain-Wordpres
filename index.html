@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+   <HEAD>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="jquery.mobile-1.4.0.min.css">
+<script src="jquery-1.10.2.min.js"></script>
+<script src="jquery.mobile-1.4.0.min.js"></script>
+</HEAD>
+<script>
+$(document).ready(function(){
+$(".show-menu").click(function(){
+$(".sliding-menu").toggleClass("reverse out in");
+})
+})
+</script>
+
+<style>
+.ui-btn.my-tooltip-btn,
+.ui-btn.my-tooltip-btn:hover,
+.ui-btn.my-tooltip-btn:active{
+	background: none;
+	border: 0;
+}
+</style>
+	
+    <body>
+	
+        <div data-role="page" id="home" data-theme="e">
+            <div data-role="header" style="background-image: url('images/Woodland-Camo.jpg'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
+            data-position="fixed" data-theme="b">
+                <h1>Guest House</h1>
+                <a data-role="button" href="#menu" data-rel="dialog" data-transition="turn"
+                data-icon="grid" data-mini="true" data-theme="d" data-inline="true">Menu</a>
+            </div>
+            <div data-role="content">
+			<center><img src="images/exterior.jpg" width="600" height="399"></center><br>
+                <h2>Dimana Guest House</h2>
+				<p><i>Guest House</i> adalah hotel dengan &#8220;javanese culture.&#8221; yang berlokasi di Kaliurang Yogyakarta. 
+				Setiap tamu akan di sambut dengan alunan budaya Jawa yang di kombinasikan dengan kelengkapan makanan khas dan pemandangan alam yang sejuk dan menyenangkan.</p>
+				<p>Untuk melepaskan kepenatan aktivitas sehari-hari, dan relaks dengan menyenangkan di ruangan dan halaman Guest House. 
+				Kami menyediakan berbagai makanan lokal yang di kombinasikan dengan ramuan internasional sehingga memberikan cita rasa yang tinggi. 
+				Makanan khas Yogya seperti <i>bakpia</i> dan <i>gudeg</i>, yang kami olah dan ambil langsung dari produsennya.</p>    
+
+			</div>
+            <div data-role="footer" style="background-image: url('images/Woodland-Camo.jpg'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
+            data-position="fixed" data-theme="b">
+                <h1>For The Fucking Better Future</h1>
+            </div>
+        </div>
+       
+	    <div data-role="dialog" id="menu" data-theme="b">
+            <div data-role="header" style="background-image: url('images/Woodland-Camo.jpg'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;">
+                <h1>MENU</h1>
+            </div>
+            <div data-role="content">
+                <ul data-role="listview" data-inset="true">
+                    <li data-icon="home">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#room">Guest Room</a>
+                    </li>
+                    <li>
+                        <a href="#dining">Dining</a>
+                    </li>
+                    <li>
+                        <a href="#garden">Garden</a>
+                    </li>
+                    <li>
+                        <a href="#reserv">Reservation</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+		<div data-role="page" id="reserv" data-theme="e">
+            <div data-role="header" style="background-image: url('images/Woodland-Camo.jpg'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
+            data-position="fixed" data-theme="b">
+                <h1>Guest House</h1>
+                <a data-role="button" href="#menu" data-rel="dialog" data-transition="slidefade"
+                data-icon="grid" data-mini="true" data-theme="d" data-inline="true">Menu</a>
+            </div>
+            <div class="content-medium">
+    <h2>Order ke kami</h2>
+    <form action="" method="post" id="availability">
+      <p>
+        <label for="title">Panggilan: </label>
+            <select name="title" id="title">
+              <option> </option>
+              <option>Mr.</option>
+              <option>Mrs.</option>
+              <option>Ms.</option>
+              <option>Lainnya</option>
+            </select>
+         <label for="other">Yang lainnya:</label>
+        <input name="other" class="narrowField" id="other" />
+      </p>
+      <p>
+        <label for="first_name">Nama Depan: </label>
+        <input type="text" name="first_name" id="first_name" />
+      </p>
+      <p>
+        <label for="family_name">Nama Keluarga: </label>
+        <input type="text" name="family_name" id="family_name" />
+      </p>
+      <p>
+        <label for="arrival_month">Datang: </label>
+        <select name="arrival_month" id="arrival_month">
+          <option value="1">Jan</option>
+          <option value="2">Feb</option>
+          <option value="3">Mar</option>
+          <option value="4">Apr</option>
+          <option value="5">May</option>
+          <option value="6">June</option>
+          <option value="7">July</option>
+          <option value="8">Aug</option>
+          <option value="9">Sept</option>
+          <option value="10">Oct</option>
+          <option value="11">Nov</option>
+          <option value="12">Dec</option>
+        </select>
+        <select name="arrival_date" id="arrival_date">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+          <option>11</option>
+          <option>12</option>
+          <option>13</option>
+          <option>14</option>
+          <option>15</option>
+          <option>16</option>
+          <option>17</option>
+          <option>18</option>
+          <option>19</option>
+          <option>20</option>
+          <option>21</option>
+          <option>22</option>
+          <option>23</option>
+          <option>24</option>
+          <option>25</option>
+          <option>26</option>
+          <option>27</option>
+          <option>28</option>
+          <option>29</option>
+          <option>30</option>
+          <option>31</option>
+        </select>
+        <select name="arrival_year" id="arrival_year">
+          <option>2011</option>
+          <option>2012</option>
+          <option>2013</option>
+          <option>2014</option>
+        </select>
+      </p>
+      <p>
+        <label for="departure_month">Keluar: </label>
+        <select name="departure_month" id="departure_month">
+          <option value="1">Jan</option>
+          <option value="2">Feb</option>
+          <option value="3">Mar</option>
+          <option value="4">Apr</option>
+          <option value="5">May</option>
+          <option value="6">June</option>
+          <option value="7">July</option>
+          <option value="8">Aug</option>
+          <option value="9">Sept</option>
+          <option value="10">Oct</option>
+          <option value="11">Nov</option>
+          <option value="12">Dec</option>
+        </select>
+         <select name="departure_date" id="departure_date">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+          <option>11</option>
+          <option>12</option>
+          <option>13</option>
+          <option>14</option>
+          <option>15</option>
+          <option>16</option>
+          <option>17</option>
+          <option>18</option>
+          <option>19</option>
+          <option>20</option>
+          <option>21</option>
+          <option>22</option>
+          <option>23</option>
+          <option>24</option>
+          <option>25</option>
+          <option>26</option>
+          <option>27</option>
+          <option>28</option>
+          <option>29</option>
+          <option>30</option>
+          <option>31</option>
+        </select>
+        <select name="departure_year" id="departure_year">
+          <option>2011</option>
+          <option>2012</option>
+          <option>2013</option>
+          <option>2014</option>
+        </select>
+      </p>
+      <fieldset>
+        <legend>Tamu</legend>
+        <p>
+          <label for="adults">Dewasa: </label>
+          <input name="adults" type="text" class="narrowField" id="adults" />
+          <label for="children">Anak-anak:</label>
+          <input name="children" type="text" class="narrowField" id="children" />
+        </p>
+</fieldset>
+    <p>
+      <input type="submit" name="send" id="send" value="Cek Ketersediaan &amp; Rates" />
+    </p>
+    </form>
+</div>
+            <div data-role="footer" style="background-image: url('images/Woodland-Camo.jpg'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
+            data-position="fixed" data-theme="b">
+                <h1>For The Fucking Better Future</h1>
+            </div>
+        </div>
+        
+		<div data-role="page" id="room" data-theme="e">
+            <div data-role="header" style="background-image: url('images/Woodland-Camo.jpg'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
+            data-position="fixed" data-theme="b">
+                <h1>Guest House</h1>
+                <a data-role="button" href="#menu" data-rel="dialog" data-transition="turn"
+                data-icon="grid" data-mini="true" data-theme="d" data-inline="true">Menu</a>
+            </div>
+            <div data-role="content">
+                <h1>Dapatkan pemandangan menarik</h1>
+				    <img src="images/hotel-room.jpg" alt="Guest room interior" width="600" height="399" class="floatright img-large" />
+					<p>Setiap kamar di desain dengan suasana pedesaan yang sejuk, di lengkapi dengan perlengkapan tidur yang memanjakan seperti tempat tidur spring-bed, layar flat TV, bebas akses internet. 
+					Ketika membuka jendela, Anda akan melihat pemandangan Gunung Merapi yang menawan, serta pada sisi lainnya pemandangan kota Yogya dari atas semakin menambah menarik pemandangan yang di lihat. 
+					Semuanya dapat Anda nikmati dari jendela kamar Anda </p>
+            </div>
+            <div data-role="footer" style="background-image: url('images/Woodland-Camo.jpg'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
+            data-position="fixed" data-theme="b">
+                <h1>For The Fucking Better Future</h1>
+            </div>
+        </div>
+        
+		<div data-role="page" id="dining" data-theme="b">
+            <div data-role="header" style="background-image: url('images/Woodland-Camo.jpg'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
+            data-position="fixed" data-theme="b">
+                <h1>Guest House</h1>
+                <a data-role="button" href="#menu" data-rel="dialog" data-transition="turn"
+                data-icon="grid" data-mini="true" data-theme="d" data-inline="true">Menu</a>
+            </div>
+            <div data-role="content" class="content"><br><br>
+	
+		<ul data-role="listview">
+		
+			<li><a href="#"><img src="images/gudeg.jpg" width="100%" >
+				<h2>Gudeg</h2>
+				<p>Asal <strong>Jogja</strong></p></a>
+					<a href="#purchase1" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-btn-b ui-corner-all ui-shadow ui-icon-user ui-btn-right">Widyo Tatag Prayoga</a>
+			
+				<div data-role="popup" id="purchase1" data-theme="b" data-overlay-theme="b" class="ui-content" style="max-width:340px; padding-bottom:2em;">
+					<h3><center>Gudeg</center></h3><br>
+					<img src="images/gudeg.jpg" width="100%" >
+						<p>Gudeg (bahasa Jawa gudheg) adalah makanan khas Yogyakarta dan Jawa Tengah yang terbuat dari nangka muda yang dimasak dengan santan. 
+						Perlu waktu berjam-jam untuk membuat masakan ini. Warna coklat biasanya dihasilkan oleh daun jati yang dimasak bersamaan. 
+						Gudeg dimakan dengan nasi dan disajikan dengan kuah santan kental (areh), ayam kampung, telur, tahu dan sambal goreng krecek.</p>
+					<a href="seconlink.html" data-rel="back" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-mini">BACK</a>
+				</div>
+			</li>
+			
+			<li><a href="#"><img src="images/geplak.jpg" width="100%" >
+				<h2>Geplak</h2>
+				<p>Asal <strong>Jogja</strong></p></a>
+					<a href="#purchase2" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-btn-b ui-corner-all ui-shadow ui-icon-user ui-btn-right">Widyo Tatag Prayoga</a>
+			
+				<div data-role="popup" id="purchase2" data-theme="b" data-overlay-theme="b" class="ui-content" style="max-width:340px; padding-bottom:2em;">
+					<h3><center>Geplak</center></h3><br>
+					<img src="images/geplak.jpg" width="100%" >
+						<p>Geplak adalah makanan khas kota Bantul yang terbuat dari parutan kelapa dan gula pasir atau gula jawa, yang rasanya manis. 
+						Ada pula yang menyebutnya sebagai makanan Betawi dengan tambahan bahan berupa tepung beras dan daun jeruk purut. 
+						Terdapat pula geplak yang dibuat dari waluh. Industri geplak umumnya dapat ditemui di daerah Bantul, Yogyakarta, 
+						yang kebanyakan diusahakan oleh industri rumah tangga. Selanjutnya jenis penganan ini berkembang meluas akibat permintaan 
+						pasar dan diusahakan tidak hanya di sekitar kota Yogya akan tetapi juga di seluruh nusantara.</p>
+					<a href="seconlink.html" data-rel="back" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-mini">BACK</a>
+				</div>
+			</li>
+			
+		</ul>
+                
+            </div>
+            <div data-role="footer" style="background-image: url('images/Woodland-Camo.jpg'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
+            data-position="fixed" data-theme="b">
+                <h1>For The Fucking Better Future</h1>
+            </div>
+        </div>
+        
+		<div data-role="page" id="garden" data-theme="e">
+            <div data-role="header" style="background-image: url('images/Woodland-Camo.jpg'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
+            data-position="fixed" data-theme="b">
+                <h1>Guest House</h1>
+                <a data-role="button" href="#menu" data-rel="dialog" data-transition="turn"
+                data-icon="grid" data-mini="true" data-theme="d" data-inline="true">Menu</a>
+            </div>
+    <div data-role="content" class="content">
+		
+		<div class="ui-body ui-body-b ui-corner-all">
+		<h2>Pemandangan menarik</h2>
+			<p>Lorem ipsum dolor sit amet, cupidatat non proident, duis aute irure dolor. Sed do eiusmod tempor incididunt mollit anim id est laborum. Velit esse cillum dolore ut enim ad minim veniam. Duis aute irure dolor lorem ipsum dolor sit amet, ullamco laboris nisi.</p>
+				<a href="#popupBasic1" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="slide">Show Picture</a>
+				<div data-role="popup" id="popupBasic1">
+					<img src="images/guest-house.jpg" width="400" height="264">
+				</div>
+		</div><br>
+		
+		<div class="ui-body ui-body-b ui-corner-all">
+			
+			<p>Mengapa Guest House begitu spesial?
+			<a href="#popupInfo" data-rel="popup" class="my-tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-inline ui-icon-info ui-btn-icon-notext" data-transition="pop" title="Learn more">Learn more</a>
+			</p>
+			<div data-role="popup" id="popupInfo" class="ui-content" data-theme="a" style="max-width:350px;">
+				<p><font face="Square721 BT">Lorem ipsum dolor sit amet, cupidatat non proident, duis aute irure dolor. Sed do eiusmod tempor incididunt mollit anim id est laborum. Velit esse cillum dolore ut enim ad minim veniam. Duis aute irure dolor lorem ipsum dolor sit amet, 
+											 ullamco laboris nisi.</font></p>
+			</div>
+		</div>
+	</div>
+		   
+            <div data-role="footer" style="background-image: url('images/Woodland-Camo.jpg'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"
+            data-position="fixed" data-theme="b">
+                <h1>For The Fucking Better Future</h1>
+            </div>
+        </div>
+	
+	</body>
+
+</html>
